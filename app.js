@@ -22,7 +22,8 @@ searchBtn.addEventListener('click', () => {
       .then(json => {
                 result.innerHTML = `
                   <div class="container">
-                    <img src="${json.avatar_url}" alt="avatar">
+                    <img src="${json.avatar_url}" target="_blank" alt="avatar">
+                    <a class="profile" href="https://github.com/${json.login}">view profile</a>
                     <h1>${json.name}</h1>
                     <h3>${json.bio}</h3>
                     <div class="info">
@@ -43,7 +44,7 @@ searchBtn.addEventListener('click', () => {
           .then(json => {
             for (let i = 0; i < json.length; i++) {
               repos.innerHTML += `
-                <a href="${json[i].html_url}">${json[i].name}</a>
+                <a href="${json[i].html_url}" target="_blank" title="${json[i].description}">${json[i].name}</a>
               `
             }
           })
