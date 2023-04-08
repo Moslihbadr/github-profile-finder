@@ -62,7 +62,7 @@ main .container img {
   width: 150px;
   border: 10px solid var(--bgcolor);
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main .container h1 {
@@ -90,13 +90,21 @@ main .repos {
   flex-wrap: wrap;
 }
 
-main .repos a {
+main a, .repos a {
   text-decoration: none;
   margin: 4px 5px 4px 0;
   padding: 4px 7px;
   color: var(--color);
   background: var(--bgcolor);
   border-radius: 6px;
+}
+
+.profile {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  display: block;
+  width: 110px;
+  padding: 7px 12px;
 }
 
 .error {
