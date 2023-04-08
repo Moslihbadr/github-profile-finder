@@ -1,0 +1,105 @@
+:root {
+  --bgcolor:#22272E;
+  --mainColor:#2D333B;
+  --color:#E1E1E1;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color:var(--bgcolor);
+  color:var(--color);
+}
+
+header{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+header input,button {
+  border: none;
+  outline: none;
+  padding: 15px 8px;
+  color: var(--color);
+  background-color: var(--mainColor);
+  font-size: 15px;
+}
+
+header input {
+  border-radius: 10px 0px 0px 10px;
+}
+
+header button {  
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+  text-transform: capitalize;
+  margin-left: -3px;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  margin-top: 30px;
+}
+
+main .container {
+  max-width: 550px;
+  background-color: var(--mainColor);
+  border-radius: 20px;
+  padding: 20px 5px 20px 20px;
+  margin: 5px;
+}
+
+main .container img {
+  width: 150px;
+  border: 10px solid var(--bgcolor);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+main .container h1 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+main .container>h3 {
+  font-size: 17px;
+  font-weight: unset;
+  margin-bottom: 20px;
+}
+
+main .info {
+  margin-bottom: 20px;
+}
+
+main .info h3 {
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+main .repos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .repos a {
+  text-decoration: none;
+  margin: 4px 5px 4px 0;
+  padding: 4px 7px;
+  color: var(--color);
+  background: var(--bgcolor);
+  border-radius: 6px;
+}
+
+.error {
+  text-transform: capitalize;
+  padding: 20px 30px 20px 20px;
+}
