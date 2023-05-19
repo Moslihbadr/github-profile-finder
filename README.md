@@ -25,7 +25,3 @@ The HTML and CSS code are used to create the structure and styling of the app.
 
 In the future, the app could be improved by adding more functionality, such as the ability to search for repositories or view information about individual commits.
 
-## Contributors
-
-This app was created by [Your Name Here]. Contributions and feedback are welcome.
-
